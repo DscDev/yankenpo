@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piedra papel tijera</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-primary">Juego de Piedra Papel o Tijera</h1>
+        <div>
+            <h4 class="text-primary">Haga su elección!</h4>
+            <button class="btn btn-info btn-lg" id="rock" title="piedra"><i class="fa fa-hand-rock-o"></i></button>
+            <button class="btn btn-danger btn-lg" id="paper" title="papel"><i class="fa fa-hand-paper-o"></i></button>
+            <button class="btn btn-warning btn-lg" id="scissors" title="tijera"><i class="fa fa-hand-scissors-o"></i></button>
+        </div>
+        <h4 class="text-primary">Resultado</h4>
+        <div class="well">
+            <table>
+                <tr>
+                    <td class="text-primary">Tu </td>
+                    <td><span class="res-label" id="jugador"></span></td>
+                </tr>
+                <tr>
+                    <td class="text-primary">Maquina </td>
+                    <td><span class="res-label" id="maquina"></span></td>
+                </tr>
+                <tr>
+                    <td class="text-primary">Ganador </td>
+                    <td><span class="res-label text-info" id="ganador"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
